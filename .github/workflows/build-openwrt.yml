@@ -102,7 +102,7 @@ jobs:
     - name: Pack code
       id: compile
       run: |
-        tar -zcvf openwrt.tar.gz openwrt/bin/targets/
+        tar -zcvf /openwrt/bin/targets/openwrt.tar.gz /openwrt
 
     - name: Check space usage
       if: (!cancelled())
